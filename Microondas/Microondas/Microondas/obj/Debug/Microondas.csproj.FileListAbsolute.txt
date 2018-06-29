@@ -1,0 +1,7 @@
+C:\Users\maico\source\repos\Microondas\Microondas\bin\Debug\Microondas.exe.config
+C:\Users\maico\source\repos\Microondas\Microondas\bin\Debug\Microondas.exe
+C:\Users\maico\source\repos\Microondas\Microondas\bin\Debug\Microondas.pdb
+C:\Users\maico\source\repos\Microondas\Microondas\obj\Debug\Microondas.csprojAssemblyReference.cache
+C:\Users\maico\source\repos\Microondas\Microondas\obj\Debug\Microondas.csproj.CoreCompileInputs.cache
+C:\Users\maico\source\repos\Microondas\Microondas\obj\Debug\Microondas.exe
+C:\Users\maico\source\repos\Microondas\Microondas\obj\Debug\Microondas.pdb
