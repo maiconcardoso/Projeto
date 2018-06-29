@@ -42,8 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsultarProgramas.cs" />
-    <Compile Include="CriarProgramaAquecimento.cs" />
     <Compile Include="LigarMicroOndas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Programas.cs" />

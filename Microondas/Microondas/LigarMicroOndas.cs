@@ -3,8 +3,7 @@
 namespace Microondas
 {
     class LigarMicroOndas
-    {
-        
+    { 
         int potencia = 0;
         int tempoSegundos = 0;
         string pontos;
@@ -15,7 +14,6 @@ namespace Microondas
             this.potencia = 8;
             this.tempoSegundos = 30;
         }
-
         public void ligarMicro()
         {
             try
@@ -73,6 +71,7 @@ namespace Microondas
             Console.WriteLine("Comida Aquecida......");
             Console.WriteLine();
         }
+        //Getters e Setters
         public int getPotencia()
         {
             return this.potencia;
@@ -89,7 +88,5 @@ namespace Microondas
         {
             this.tempoSegundos = tempoSegundos;
         }
-
     }
-
 }

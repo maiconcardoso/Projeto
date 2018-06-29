@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Microondas
 {
@@ -12,13 +8,18 @@ namespace Microondas
         {
             LigarMicroOndas ligar = new LigarMicroOndas();
             Programas programa = new Programas();
-            ConsultarProgramas consulta = new ConsultarProgramas();
-            CriarProgramaAquecimento criar = new CriarProgramaAquecimento();
             string entrada;
             int opcao = 0;
-            Console.WriteLine("Ligar Micro-ondas? [s/n]");
-            entrada = Console.ReadLine();
-            Console.Clear();
+            try
+            {
+                Console.WriteLine("Ligar Micro-ondas? [s/n]");
+                entrada = Console.ReadLine();
+                Console.Clear();
+            }catch (Exception){
+                Console.WriteLine("Informação incorreta, tente novamente");
+                entrada = Console.ReadLine();
+                Console.Clear();
+            }
             try
             {
                 do
@@ -45,21 +46,53 @@ namespace Microondas
                                 ligar.rapidoAquecimento();
                                 break;
                             case 3:
-                                consulta.exibirProgramasConsulta();
-                                consulta.consultarCarne();
-                                consulta.consultarFrango();
-                                consulta.consultarPeixe();
-                                consulta.consultarFeijao();
+                                programa.exibirProgramas();
+                                if (programa.getComida().Equals("carne"))
+                                {
+                                    programa.consultarCarne();
+                                }
+                                else if(programa.getComida().Equals("frango"))
+                                {
+                                    programa.consultarFrango();
+                                }
+                                else if (programa.getComida().Equals("peixe"))
+                                {
+                                    programa.consultarPeixe();
+                                }
+                                else if (programa.getComida().Equals("feijao"))
+                                {
+                                    programa.consultarFeijao();
+                                }
+                                else
+                                {
+                                    programa.consultarComidaCriada();
+                                }
                                 break;
                             case 4:
                                 programa.exibirProgramas();
-                                programa.esquentarCarne();
-                                programa.esquentarFrango();
-                                programa.esquentarPeixe();
-                                programa.esquentarFeijao();
+                                if (programa.getComida().Equals("carne"))
+                                {
+                                    programa.esquentarCarne();
+                                }
+                                else if (programa.getComida().Equals("frango"))
+                                {
+                                    programa.esquentarFrango();
+                                }
+                                else if (programa.getComida().Equals("peixe"))
+                                {
+                                    programa.esquentarPeixe();
+                                }
+                                else if (programa.getComida().Equals("feijao"))
+                                {
+                                    programa.esquentarFeijao();
+                                }
+                                else
+                                {
+                                    programa.esquentarComidaCriada();
+                                }
                                 break;
                             case 5:
-                                criar.criarPrograma();
+                                programa.criarPrograma();
                                 break;
                             case 6:
                                 Console.WriteLine("Desligando programa.......");
