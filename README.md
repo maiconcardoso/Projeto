@@ -1,2 +1,2 @@
 # Projeto Microondas
-O objetivo consiste em emular um microondas, utilizando a linguagem C#.
+O objetivo consiste em emular um microondas em modo terminal, utilizando a linguagem C#.
